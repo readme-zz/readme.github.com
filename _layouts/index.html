@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<h2>Posts</h2>
+<ul class="posts">
+{% for post in site.posts %}
+<li>
+<a href="{{ post.url }}">{{ post.title }}</a>
+<p>{{ post.summary }}</p>
+</li>
+{% endfor %}
+</ul>
+
+<script type="text/javascript" charset="utf-8">
+    var posts = [
+      {% for post in site.posts %}
+        {
+          title:   unescape('{{ post.title   | strip_html | cgi_escape }}').gsub(/\+/, ' '),
+          summary: unescape('{{ post.summary | strip_html | cgi_escape }}').gsub(/\+/, ' '),
+          content: unescape('{{ post.content | strip_html | cgi_escape }}').gsub(/\+/, ' '),
+          url:     unescape('{{ post.url     | strip_html | cgi_escape }}').gsub(/\+/, ' '),
+        },
+      {% endfor %}
+    0];
+    posts.pop();
+  </script>

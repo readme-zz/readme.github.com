@@ -1,0 +1,3 @@
+<hr>
+<h3>Footer</h3>
+<p>This is the bottom of the page, and welcome to it.</p>

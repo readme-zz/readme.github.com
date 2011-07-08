@@ -3,10 +3,11 @@ layout: default
 title: TechStuff.ca on Github.com
 ---
 
-{% include header.textile %}
+This is the front page, the *index* page, of the site.
 
 h2. Posts
 
 {% for post in site.posts %}
 <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
+

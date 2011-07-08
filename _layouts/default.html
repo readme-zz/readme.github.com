@@ -4,10 +4,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>
-	{% if page.title %}
-	{{ page.title }} - 
-	{% endif %}
-	Sandy McMurray
+	{{ page.title }} - Sandy McMurray
 	</title>
 	<meta name="author" content="Sandy McMurray" />
 	{% if page.summary %}
@@ -25,24 +22,15 @@
 <body>
 	<div class="container">
 		<div class="span-20 prepend-4 last">
-			<img src="http://readme.github.com/images/happymac.gif" width="50" style="float:left; margin-right:20px;" />
-			<h1 style="margin-top:10px;">TechStuff.ca</h1>
+			{% include header.textile %}
 		</div>
 		<hr class="clear">
 		<div class="span-5 append-1" style="text-align:right;">
-			by Sandy McMurray
+			{% include sidebar.textile %}
 		</div>
 		<div class="span-15 append-3 last">
-			<h2>{{ page.title }}</h2>
-			{{ content }}
-			<div id="related">
-				<h3>Related Posts</h3>
-				<ul class="posts">
-				{% for post in site.related_posts limit:3 %}
-				<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-				{% endfor %}
-				</ul>
-			</div>
+			<p>Text goes here.</p>
+			{% include footer.textile %}
  		</div>
 	</div>
 </body>

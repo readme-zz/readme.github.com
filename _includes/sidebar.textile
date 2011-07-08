@@ -1,0 +1,3 @@
+<h3>Sidebar</h3>
+<p>Stuff goes here.</p>
+<p>Maybe even more stuff goes here.</p>

@@ -1,6 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
    "http://www.w3.org/TR/html4/strict.dtd">
-
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -14,7 +13,6 @@
 	{% if page.summary %}
 	<meta namne="description" content="{{ page.summary }}" />
 	{% endif %}
-
 <!-- Blueprint CSS call -->
 	<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
 	<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">
@@ -23,11 +21,8 @@
 	<![endif]--></code></pre>
 <!-- Custom CSS call -->
 	<link rel="stylesheet" href="css/custom.css" type="text/css" media="screen, projection, print">
-
 </head>
-
 <body>
-
 	<div class="container">
 		<div class="span-20 prepend-4 last">
 			<img src="images/happymac.gif" width="50" style="float:left; margin-right:20px;" />
@@ -38,12 +33,17 @@
 			by Sandy McMurray
 		</div>
 		<div class="span-15 append-3 last">
-			<p>
+			<h2>{{ page.title }}</h2>
 			{{ content }}
-			</p>
-		</div>
-
+			<div id="related">
+				<h3>Related Posts</h3>
+				<ul class="posts">
+				{% for post in site.related_posts limit:3 %}
+				<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+				{% endfor %}
+				</ul>
+			</div>
+ 		</div>
 	</div>
-
 </body>
 </html>

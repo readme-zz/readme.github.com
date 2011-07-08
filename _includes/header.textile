@@ -1,2 +1,0 @@
-<img src="http://readme.github.com/images/happymac.gif" width="50" style="float:left; margin-right:20px;" />
-<h1 style="margin-top:10px;">TechStuff.ca</h1>

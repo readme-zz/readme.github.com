@@ -1,2 +1,15 @@
-lsi: [boolean]
-exclude: _sites, .dsstore
+pygments: true
+auto: true
+permalink: /blog/:year-:month-:day/:title
+exclude:
+- README.markdown
+
+markdown: rdiscount
+rdiscount:
+    extensions: [smart]
+
+#--- site vars
+author: Sandy McMurray
+url: http://techstuff.ca
+email: sandy@techstuff.ca
+local: true

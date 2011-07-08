@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<article id="about">
+<img src="http://www.gravatar.com/avatar/58941a4098b9dbaa6166a165b2310cd8?s=80" />
+<p>Sandy McMurray knows why your computer does that weird thing, and how to make it stop.</p>
+<p>He can grow a full beard in four days and make wristwatches stop just by wearing them. He has a natural ability to explain complicated ideas.</p>
+<p>He's been around. For a detailed account of Sandy's publishing credits and employment history, see <a href="http://www.google.ca/#hl=en&source=hp&q=Sandy+McMurray&oq=Sandy+McMurray&aq=f&aqi=&aql=&gs_sm=e&gs_upl=1156l2849l0l14l7l0l0l0l0l0l0l&bav=on.2,or.r_gc.r_pw.&fp=b2f7466926a9e&biw=1326&bih=786">Google</a> or talk to his Mom. (<a href="/about">more</a>)</p>
+</article>
+<hr />
+<article>
+<h1>Recent Posts</h1>
+<ul>
+{% for post in site.posts | limit: 5 %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a> <span class="meta"><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %d, %Y" }}</time></span></li>
+{% endfor %}
+    <li><a href="/archive">See the full archive.</a></li>
+</ul>
+</article>

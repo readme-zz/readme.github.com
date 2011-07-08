@@ -1,0 +1,139 @@
+/* General */
+html, body {
+    background: #FFFFFF;
+}
+html body {
+    font-size: 80%;
+}
+.container {
+    margin: 2em auto 0 auto;
+    width: 630px;
+}
+.hell {
+    padding: 1em;
+}
+a, a:link, a:visited {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+a:hover, a:active, a:focus {
+    border-bottom: 1px solid #FFF;
+}
+hr {
+    background: #999;
+    color: #999;
+}
+h2 {
+    font-size: 1.8em;
+}
+
+/* Header */
+header {
+    position: relative; 
+    margin-bottom: 2em;
+}
+header nav { 
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+}
+header li { 
+    float: left; 
+    list-style-type: none; 
+}
+header li a, header li a:link, header li a:visited, header li a:hover, header li a:active, header li a:focus { 
+    border: none;
+    display: block; 
+    padding: 0.5em;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+
+header hgroup {
+    text-transform: lowercase;
+}
+header h1 a, header h1 a:link, header h1 a:visited, header h1 a:hover, header h1 a:active, header h1 a:focus {
+    border: none;
+    text-shadow: 1px 1px 1px #999;
+    color: #111;
+    text-decoration: none;
+}
+header h1 span {
+    margin-right: -0.1em;
+}
+header h2 {
+    clear: both; 
+    font-size: 1.5em; 
+    color: #AAA;
+    margin-bottom: 0;
+}
+header strong {
+    font-weight: normal;
+}
+header h1 span+span {
+    opacity: 0.5;
+    -moz-opacity: 0.5;
+}
+
+/* Content */
+#content {
+    padding: 1em;
+    background: #FFFFFF;
+    margin: 1em 0 0 0;
+    font-size: 120%;
+}
+#content h1 {
+    font-size: 140%;
+}
+#content h2 {
+    font-size: 120%;
+}
+#content .meta {
+    white-space: nowrap;
+    font-size: 70%;
+}
+#content code {
+    letter-spacing: -1px;
+    font-size: 0.9em;
+}
+#content .highlight { 
+    background: #FFF;
+}
+#content .highlight pre {
+    padding: 0.5em;
+}
+
+/* About */
+#about { 
+    font-size: 1.2em; 
+}
+#about img {
+    float: left;
+    margin: 0.2em 1em 0 0;
+    padding: 0.3em;
+    background: #EEE;
+    border: 1px solid #CCC;
+}
+#about p {
+    margin-left: 80px;
+}
+
+/* such a footer */
+footer {
+    margin: 4em 0 0 0;
+    font-size: 80%;
+    color: #333;
+    text-align: right;
+}
+footer ul, footer li {
+    list-style-type: none;
+}
+footer li {
+    display: inline;
+    padding: 0 0.5em;
+    border-left: 1px solid #CCC;
+}
+footer li.first {
+    border: none;
+}

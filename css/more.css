@@ -1,0 +1,31 @@
+header {
+    background: #333;
+    color: #F8F8F8;
+    padding: 1em;
+    position: relative;
+    border: 0.5em solid #444;
+    border-top: 0;
+}
+header h1 {
+    color: #F8F8F8;
+    margin: 0;
+    float: left;
+}
+header .back {
+    text-align: right;
+    padding: 1em;
+}
+header a {
+    color: #F8F8F8;
+}
+header a:hover {
+    color: #E0E0E0;
+    text-decoration: none;
+}
+#content {
+    background: #E0E0E0;
+    margin: 0 2em;
+    padding: 1em;
+    height: 100%;
+    font-size: 1.4em;
+}

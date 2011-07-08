@@ -1,0 +1,35 @@
+body {
+	font-size: 34px;
+    font-family: "Helvetica Neue";
+	line-height: 1.5;
+	color: #333;
+	background: #F8F8F8;
+}
+body pre {
+	font-size: 32px;
+    font-family: Consolas;
+}
+
+h1, #slide-0 {
+	text-align: center;
+}
+#slide-0 h2 {
+	color: #666;
+}
+h1, h2, h3, h4, h5, h6 { margin-bottom: 0.5em; 
+    text-shadow: 2px 2px 2px #CCC;
+}
+li { margin-bottom: 0.5em; }
+
+#slide-12 pre {
+	font-size: 22px;
+}
+
+#slide-14 pre {
+	font-size: 14px;
+}
+a { 
+    color: #004080;
+    border-bottom: 1px dotted;
+    text-decoration: none;
+}

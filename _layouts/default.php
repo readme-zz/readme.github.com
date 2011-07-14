@@ -50,9 +50,9 @@
             </style>
             <nav>
                 <ul>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/colophon">Colophon</a></li>
-                    <li><a href="/archive">Archive</a></li>
+                    <li><a href="http://about.me/sandymcmurray" target="new">About</a></li>
+                    <li><a href="/archive">Archives</a></li>
+                    <li><a href="mailto:sandy@techstuff.ca">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -63,10 +63,8 @@
         <footer id="very-footer">
             <nav>
                 <ul>
-                    <li class="first"><a href="/atom.xml">Subscribe (Atom)</a></li>
-                    <li>Follow me on <a href="http://twitter.com/techstuff">Twitter</a></li>
-                    <li>Fork me on <a href="http://github.com/readme">Github</a></li>
-                    <li>Powered by <a href="http://jekyllrb.com">Jekyll</a></li>
+                    <li class="first">You should follow me on <a href="http://twitter.com/techstuff">Twitter</a></li>
+                    <li>Powered by <a href="http://github.com/readme">Github</a> and <a href="http://jekyllrb.com">Jekyll</a></li>
                     <li>design based on <a href="http://johnsonpage.org">Johnson Page</a></li>
                 </ul>
             </nav>
